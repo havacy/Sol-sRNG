@@ -1,0 +1,7 @@
+import numpy as np
+
+Rolls = ["Common", "Uncommon", "Rare", "Good", "Legendary", "Secret", "Mythical", "Godly"]
+Roll_probabilities = [62, 20, 5, 7, 3, 1.5, 1, 0.5]
+rr = np.random.choice(Rolls, p=[prob/100 for prob in Roll_probabilities])
+
+print(rr)
